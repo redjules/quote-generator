@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
-    <link rel="icon" type=""image/png"
-    href=""https://www.google.com/s2/favicons?domain=jacinto.design">
+    <title>Quote Generator</title>
+    <link rel="icon" type="image/png"
+    href="https://www.google.com/s2/favicons?domain=jacinto.design">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -17,13 +17,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-      <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-      <path
-        d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
-      />
-    </svg>
+    
+    <div class="quote-container" id="quote-container">
+      <!-- Quote-->
+      <div class="quote-text">
+          <i class="fas fa-quote-left"></i>
+          <span id="quote"></span>
+    </div>
+    <!-- Author-->
+      <div class="quote-author">
+          <i class="fas fa-quoe-left"></i>
+          <span id="author"></span>
+    </div>
+    <!-- Buttons-->
+    <div class="button-container">
+      <button class="twitter-button" id="twitter" title="Tweet This!">
+        <i class="fab fa-twitter"></i>
+      </button>
+      <button id="new-quote">New Quote</button>
+    </div>
+    <!-- Loader-->
+    <div class="loader" id="loader"></div>
     <script src="script.js"></script>
   </body>
 </html>
